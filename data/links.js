@@ -28,7 +28,7 @@ const links = [
     },
     {
         label: "RedBubble",
-        url: "https://www.redbubble.com/people/veronikanoolien"
+        url: "https://www.redbubble.com/people/noolien"
     },
     {
         label: "GoodReads",
@@ -55,3 +55,4 @@ const links = [
  *     url: "https://twitter.com/yourusername"
  * }
  */
+
