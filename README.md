@@ -1,33 +1,33 @@
 # Veronika Noolien - Portfolio & Blog
 
-🔗 **Live site:** [veronikanoolien.github.io](https://veronikanoolien.github.io)
+**Live site:** [veronikanoolien.github.io](https://veronikanoolien.github.io)
 
 ---
 
-## 📖 What it is?
+## What it is?
 
 This is my personal portfolio and blog, where I share my work as an illustrator, book editor, and reviewer.
 Every line of code includes **detailed teaching comments** explaining not just _what_ the code does, but _why_ and _how_ it works. This project was built as part of my web development learning journey, and I hope it can help others too.
 
 ---
 
-## 🎯 Why so much comments?
+##  Why so much comments? Are you mad?
 
-When I started, I found that I have no idea what every line does and why I am even typing it. As a neurodivergent person I need to know answers to all the _why_ and _how_ to learn something and fully understand. Not gonna lie, I used Copilot as my "teacher" and spend days to find form that I like and can learn from.   
-
----
-
-## ✨ Features
-
-- **📝 Blog System** - Dynamic blog with category filtering (no backend required!)
-- **🎨 Portfolio Gallery** - Filterable artwork gallery with modal lightbox
-- **🌙 Dark Mode** - Theme toggle with localStorage persistence and system preference detection
-- **🔗 Social Links** - Linktree-style social media buttons
-- **📱 Responsive Design** - Works on desktop, tablet, and mobile
+When I started, I found that I have no idea what every line does and why I am even typing it. As a neurodivergent person I need to know answers to all the _why_ and _how_ to learn something and fully understand. Not gonna lie, I used Copilot as my "teacher" and spend days to find form that I like and can learn from. But remember - we are all mad here.    
 
 ---
 
-## 📂 Project structure
+## Features
+
+- **Blog System** - Dynamic blog with category filtering 
+- **Portfolio Gallery** - Filterable artwork gallery with modal lightbox
+- **Dark Mode** - Theme toggle with localStorage persistence and system preference detection
+- **Social Links** - Linktree-style social media buttons
+- **Responsive Design** - Works on desktop, tablet, and mobile (hope so)
+
+---
+
+## Project structure
 
 ```
 ├── index.html          # Main HTML structure
@@ -44,7 +44,7 @@ Keeping data separate from logic makes it easy to add blog posts or artwork with
 
 ---
 
-## 🎓 What I learned and you can too
+## What I tried to learn and you can too
 
 ### **HTML (index.html)**
 
@@ -75,7 +75,7 @@ Keeping data separate from logic makes it easy to add blog posts or artwork with
 
 ---
 
-## 🚀 How To Use This Code
+## How To Use This Code
 
 ### **View It Live:**
 
@@ -99,7 +99,7 @@ Visit [veronikanoolien.github.io](https://veronikanoolien.github.io)
 
 ---
 
-## 🌟 About Me
+## About Me
 
 I'm Veronika Noolien, an illustrator and book editor learning web development to better showcase my creative work online. This project represents my journey from "oh my god, what the hell" to something that looks like a real webpage. 
 
@@ -111,4 +111,5 @@ I'm Veronika Noolien, an illustrator and book editor learning web development to
 
 
 _Last updated: January 2026_
+
 
