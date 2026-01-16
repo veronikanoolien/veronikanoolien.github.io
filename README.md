@@ -4,16 +4,16 @@
 
 ---
 
-## What it is?
+## What It Is?
 
 This is my personal portfolio and blog, where I share my work as an illustrator, book editor, and reviewer.
 Every line of code includes **detailed teaching comments** explaining not just _what_ the code does, but _why_ and _how_ it works. This project was built as part of my web development learning journey, and I hope it can help others too.
 
 ---
 
-##  Why so much comments? Are you mad?
+##  Why So Many Comments? Are You Mad?
 
-When I started, I found that I have no idea what every line does and why I am even typing it. As a neurodivergent person I need to know answers to all the _why_ and _how_ to learn something and fully understand. Not gonna lie, I used Copilot as my "teacher" and spend days to find form that I like and can learn from. But remember - we are all mad here.    
+When I started, I realized that I had no idea what each line did or why I was even typing it. As a neurodivergent person, I need answers to all the _why_ and _how_ questions in order to learn something and fully understand it. Not gonna lie, I used Copilot as my "teacher" and spent days to find a form that I like and can learn from. But remember -- we are all mad here.    
 
 ---
 
@@ -23,11 +23,11 @@ When I started, I found that I have no idea what every line does and why I am ev
 - **Portfolio Gallery** - Filterable artwork gallery with modal lightbox
 - **Dark Mode** - Theme toggle with localStorage persistence and system preference detection
 - **Social Links** - Linktree-style social media buttons
-- **Responsive Design** - Works on desktop, tablet, and mobile (hope so)
+- **Responsive Design** - Works on desktop, tablet, and mobile (hopefully!)
 
 ---
 
-## Project structure
+## Project Structure
 
 ```
 ├── index.html          # Main HTML structure
@@ -40,11 +40,11 @@ When I started, I found that I have no idea what every line does and why I am ev
 ```
 
 **Why separate data files?**  
-Keeping data separate from logic makes it easy to add blog posts or artwork without touching the JavaScript code - and to be honest. I just like it clean and not overwhelming. 
+Keeping data separate from logic makes it easy to add blog posts or artwork without touching the JavaScript code -- and to be honest, I just like it clean and not overwhelming. 
 
 ---
 
-## What I tried to learn and you can too
+## What I Tried to Learn — and You Can Too
 
 ### **HTML (index.html)**
 
@@ -75,19 +75,19 @@ Keeping data separate from logic makes it easy to add blog posts or artwork with
 
 ---
 
-## How To Use This Code
+## How to Use This Code
 
-### **View It Live:**
+### **View it live:**
 
 Visit [veronikanoolien.github.io](https://veronikanoolien.github.io)
 
-### **Run It Locally:**
+### **Run it locally:**
 
 1. Clone or download this repository
 2. Open `index.html` in your browser
 3. That's it! No build process needed.
 
-### **Modify For Your Own Use:**
+### **Modify for your own use:**
 
 **To customize this for yourself:**
 
@@ -101,7 +101,7 @@ Visit [veronikanoolien.github.io](https://veronikanoolien.github.io)
 
 ## About Me
 
-I'm Veronika Noolien, an illustrator and book editor learning web development to better showcase my creative work online. This project represents my journey from "oh my god, what the hell" to something that looks like a real webpage. 
+I'm Veronika Noolien, an illustrator and book editor learning web development to better showcase my creative work online. This project represents my journey from "oh my god, what the hell" to something that actually looks like a real webpage. 
 
 **Connect with me:**
 
@@ -111,5 +111,6 @@ I'm Veronika Noolien, an illustrator and book editor learning web development to
 
 
 _Last updated: January 2026_
+
 
 
