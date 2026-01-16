@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- DOCTYPE tells the browser this is an HTML5 document -->
+<!-- HTML5 is the modern standard for web pages -->
+ 
+<html lang="cz">
+<!-- The <html> tag wraps everything on the page -->
+<!-- lang="cz" tells browsers and screen readers this page is in Czech -->
+<!-- This helps with search engines and accessibility -->
+
+<head>
+    <!-- The <head> section contains metadata (information ABOUT the page) -->
+    <!-- Nothing in <head> is visible to users, but it's crucial for browsers -->
+    
+    <meta charset="UTF-8">
+    <!-- charset="UTF-8" allows us to use Czech characters (ě, š, č, ř, ž, ý, etc.) -->
+    <!-- Without this, special characters would appear broken -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This makes the page responsive (mobile-friendly) -->
+    <!-- width=device-width: page width matches screen width -->
+    <!-- initial-scale=1.0: no zoom when page loads -->
+    
+    <title>Veronika Noolien – Ilustrátorka & Editorka</title>
+    <!-- The text that appears in the browser tab -->
+    <!-- Also used by search engines and when sharing on social media -->
+    
+    <!-- Google Fonts setup (2 steps: preconnect + load fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect establishes early connection to Google's servers -->
+    <!-- This makes font loading faster (performance optimization) -->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Actually loads the fonts: -->
+    <!-- Playfair Display: elegant serif font for headings -->
+    <!-- Inter: clean sans-serif font for body text -->
+    <!-- wght= specifies which font weights to load (lighter files) -->
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Links to your CSS file where all the styling lives -->
+    <!-- CSS controls colors, sizes, spacing, layouts, animations -->
+</head>
+
+<body>
+    <!-- The <body> contains everything users can see and interact with -->
+    
+    <div class="page-wrapper">
+        <!-- Main container that holds sidebar + content -->
+        <!-- Using a wrapper allows us to control the overall page layout -->
+        
+        <aside class="sidebar">
+            <!-- <aside> is for content that's related but separate from main content -->
+            <!-- Perfect for a sidebar with profile info and links -->
+            
+            <header class="hero">
+                <!-- <header> marks the introductory content of a section -->
+                <!-- "hero" refers to the prominent top section with profile -->
+                
+                <!-- Dark mode toggle button -->
+                <!-- This button allows users to switch between light and dark themes -->
+                <!-- Placed in header for easy access -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Přepnout tmavý/světlý režim">
+                    <!-- aria-label = accessible description for screen readers -->
+                    <!-- Screen readers will announce: "Toggle dark/light mode button" -->
+                    <span class="theme-icon">🌙</span>
+                    <!-- Moon emoji (🌙) = "click for dark mode" -->
+                    <!-- When dark mode is active, this becomes ☀️ (sun) -->
+                </button>
+                
+                <div class="profile-image">
+                    <!-- Container for the avatar image -->
+                    <!-- Wrapping in a div allows special styling like circular crop -->
+                    
+                    <img src="profile.png" alt="Veronika Noolien" class="avatar">
+                    <!-- <img> displays an image -->
+                    <!-- src= location of the image file -->
+                    <!-- alt= description for screen readers and if image fails to load -->
+                    <!-- This is CRUCIAL for accessibility! -->
+                </div>
+                
+                <h1>Veronika Noolien</h1>
+                <!-- <h1> is the main heading - only use ONE per page -->
+                <!-- Search engines use this to understand what your page is about -->
+                
+                <p class="tagline">Ilustrátorka • Knižní editorka • Recenzentka</p>
+                <!-- <p> is a paragraph - basic text container -->
+                <!-- The • symbols create visual separation between roles -->
+            </header>    
+        
+            <section class="about">
+                <!-- <section> groups related content together -->
+                <!-- Good for SEO and accessibility - helps define page structure -->
+                
+                <h2>O mně</h2>
+                <!-- <h2> is a second-level heading (hierarchy: h1 > h2 > h3 > h4...) -->
+                <!-- Always use headings in order - don't skip levels! -->
+                
+                <p>Ahoj! Jsem Veronika Noolien, vášnivá ilustrátorka a knižní editorka. Miluji vytváření vizuálních příběhů a pomáhání autorům přinášet jejich díla k životu. Kromě toho také recenzuji knihy a sdílím své myšlenky o literatuře.</p>   
+                <!-- Bio text introducing you to visitors -->
+            </section>
+
+            <section aria-labelledby="links-title">
+                <!-- aria-labelledby connects this section to its heading -->
+                <!-- Screen readers use this to announce "Links section: Kde mě najdete" -->
+                
+                <h2 id="links-title">Kde mě najdete</h2>
+                <!-- id="links-title" creates a unique identifier -->
+                <!-- This is what aria-labelledby refers to above -->
+                
+                <div id="links" class="links"></div>
+                <!-- Empty container! JavaScript will fill this with link buttons -->
+                <!-- Why empty? So we can update links without changing HTML -->
+                <!-- id="links" lets JavaScript find this exact element -->
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <!-- <main> holds the primary content of the page -->
+            <!-- Only ONE <main> per page - it's the star of the show! -->
+            
+            <!-- Blog section with integrated category filters and gallery toggle -->
+            <!-- This structure groups all navigation options together for better UX -->
+            <section aria-labelledby="blog-title" class="blog">
+                <!-- aria-labelledby links to the h2 below for accessibility -->
+                
+                <h2 id="blog-title">Příspěvky</h2>
+                <!-- The main heading for the blog section -->
+                
+                <!-- Container for category filters and gallery button -->
+                <!-- Using flexbox to align them in a single row -->
+                <div class="filters-wrapper">
+                    <!-- This wrapper creates a horizontal layout -->
+                    <!-- WHY? So category buttons and gallery button sit side-by-side -->
+                    
+                    <!-- Blog category filters (Domů, Osobní, Ilustrace, etc.) -->
+                    <!-- Generated dynamically by JavaScript -->
+                    <div id="category-filters" class="category-filters"></div>
+                    <!-- Empty! JavaScript creates buttons from the categories array -->
+                    <!-- This keeps content and code separate (good practice) -->
+                    
+                    <!-- Gallery toggle button positioned on the right -->
+                    <!-- Acts as an additional "category" for viewing portfolio -->
+                    <button id="portfolio-toggle" class="category-filter gallery-toggle" aria-expanded="false">
+                        <!-- aria-expanded tells screen readers if content is shown/hidden -->
+                        <!-- JavaScript changes this between "true" and "false" -->
+                        <!-- WHY two classes? category-filter for style, gallery-toggle for positioning -->
+                        Galerie
+                    </button>
+                </div>
+                
+                <!-- Portfolio content section (hidden by default) -->
+                <!-- Shows when user clicks the Galerie button -->
+                <div id="portfolio-content" class="portfolio-content" hidden>
+                    <!-- hidden attribute makes this invisible initially -->
+                    <!-- JavaScript removes 'hidden' when gallery button is clicked -->
+                    
+                    <div id="portfolio-filters" class="portfolio-filters"></div>
+                    <!-- Filter buttons for portfolio types (Vše, Postavy, Krajiny...) -->
+                    
+                    <div id="portfolio-grid" class="portfolio-grid"></div>
+                    <!-- Grid of portfolio images -->
+                    <!-- Both filled by JavaScript from the portfolio array -->
+                </div>
+                
+                <!-- Blog posts list (shown by default) -->
+                <div id="blog-list" class="blog-list"></div>
+                <!-- JavaScript creates article cards here from the posts array -->
+                <!-- Each card shows: title, category badge, date, summary, "read more" link -->
+                
+                <!-- Single post view (shown when user clicks a post) -->
+                <div id="post-view" class="post-view" hidden>
+                    <!-- Initially hidden, shown when viewing full blog post -->
+                    <!-- JavaScript fills this with the complete post content -->
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <!-- <footer> for page footer content -->
+                <!-- Contains copyright and other legal/meta information -->
+                
+                <p>&copy; 2026 Veronika Noolien. Všechna práva vyhrazena.</p>
+                <!-- &copy; is HTML entity for © symbol -->
+                <!-- Entities are special codes for symbols that might not display correctly -->
+            </footer>
+        </main>
+    </div>
+
+    <!-- Cursor particles container -->
+    <!-- Lives outside main layout so particles can appear anywhere on screen -->
+    <div id="cursor-particles"></div>
+    <!-- JavaScript adds sparkle/star elements here as you move mouse -->
+    <!-- Empty by default, particles are created and destroyed dynamically -->
+
+    <!-- Image Modal/Lightbox -->
+    <!-- Lives outside main layout so it can overlay everything -->
+    <div id="image-modal" class="image-modal" hidden>
+        <!-- Modal = popup window that appears over content -->
+        <!-- Lightbox = modal specifically for viewing images larger -->
+        
+        <div class="modal-overlay" onclick="closeImageModal()">
+            <!-- Semi-transparent dark background -->
+            <!-- onclick= runs JavaScript when user clicks the dark area -->
+            <!-- Clicking overlay closes the modal (common UX pattern) -->
+        </div>
+        
+        <div class="modal-content">
+            <!-- The actual modal box containing image and info -->
+            
+            <button class="modal-close" onclick="closeImageModal()">✕</button>
+            <!-- ✕ is a multiplication symbol used as close icon -->
+            <!-- onclick closes modal when X is clicked -->
+            
+            <img class="modal-image" src="" alt="">
+            <!-- Empty src - JavaScript fills this with clicked image -->
+            
+            <div class="modal-info">
+                <!-- Container for text info about the image -->
+                
+                <h2 class="modal-title"></h2>
+                <!-- Title of the artwork -->
+                
+                <p class="modal-description"></p>
+                <!-- Description of the artwork -->
+                <!-- All filled by JavaScript when image is clicked -->
+            </div>
+        </div>
+    </div>
+
+    <!-- LOAD DATA FILES FIRST -->
+    <!-- These files contain your data (posts, gallery, links) -->
+    <!-- They must load BEFORE script.js so the data is available -->
+    <!-- WHY? script.js uses the variables defined in these files -->
+    
+    <script src="data/links.js"></script>
+    <!-- Social media links data -->
+    <!-- Creates the 'links' array -->
+    
+    <script src="data/posts.js"></script>
+    <!-- Blog posts data -->
+    <!-- Creates the 'posts' array -->
+    
+    <script src="data/gallery.js"></script>
+    <!-- Portfolio/gallery data -->
+    <!-- Creates the 'portfolio' array and 'portfolioTypes' object -->
+    
+    <!-- LOAD MAIN SCRIPT LAST -->
+    <script src="script.js"></script>
+    <!-- Main JavaScript logic -->
+    <!-- Uses data from the files loaded above -->
+    <!-- Placed at END of body so HTML loads before JavaScript runs -->
+    <!-- WHY? JavaScript needs HTML elements to exist before it can manipulate them -->
+</body>
+</html>
