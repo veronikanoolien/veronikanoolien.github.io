@@ -25,20 +25,75 @@
  * - description: Full description (shows in modal when clicked)
  */
 const portfolio = [
-  
+  {
+    id: "zelva",
+    type: "illustrations",
+    title: "Knižní ilustrace - Želva",
+    image: "pictures/zelva(1).jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
+    id: "zaba",
+    type: "illustrations",
+    title: "Knižní ilustrace - Žabka",
+    image: "pictures/Žába.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
+    id: "zero",
+    type: "fanart",
+    title: "Fan art - Zero",
+    image: "pictures/zero.jpg",
+    description: "Fan art ke hře Borderlands 2",
+  },
+   {
+    id: "vrana",
+    type: "fanart",
+    title: "Fan art - Six of Crows",
+    image: "pictures/vrána a kalich.jpg",
+    description: "Fan art ke knižní sérii Šest vran (Six of Crows) od Leigh Bardugo",
+  },
+   {
+    id: "veverka",
+    type: "illustrations",
+    title: "Knižní ilustrace - Veverka",
+    image: "pictures/veverka_zrzavejsi.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
+    id: "mesicek",
+    type: "illustrations",
+    title: "Knižní ilustrace - Měsíc",
+    image: "pictures/mesicek_tmavsi.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
+    id: "koteastene",
+    type: "illustrations",
+    title: "Knižní ilustrace - Koťátko se štěňátkem",
+    image: "pictures/kotě_a_štěně.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
+    id: "vrabec",
+    type: "illustrations",
+    title: "Knižní ilustrace - Vrabec",
+    image: "pictures/Vrabec.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
    {
     id: "optimusprime",
     type: "fanart",
     title: "Optimus Prime",
     image: "pictures/Optimus Prime.jpg",
-    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+    description: "Fan art k filmu Transformers",
     featured: true
   },
    {
     id: "datel",
-    type: "animals",
-    title: "Ilustrace k pohádce - Datel",
-    image: "pictures/datel.jpg",
+    type: "illustrations",
+    title: "Knižní ilustrace - Datel",
+    image: "pictures/Datel.jpg",
     description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
   },
    {
@@ -51,7 +106,7 @@ const portfolio = [
   },
   {
     id: "animal-1",
-    type: "animal",
+    type: "illustrations",
     title: "Můra a hvězdy",
     image: "pictures/moth_stars.png",
     description: "Obrázek můry s hvězdnou oblohou v pozadí.",
@@ -81,7 +136,7 @@ const portfolioTypes = {
   all: "Vše",              // Show all artwork
   fanart: "Fan art",       // Fan art illustrations
   character: "Postavy",    // Character designs, portraits
-  animal: "Zvířata",    // Animals
+  illustrations: "Ilustrace",    // Illustrations
   cover: "Obálky",        // Book covers
   illustration: "Rostliny" // Plant illustrations
 };
