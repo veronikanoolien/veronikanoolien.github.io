@@ -25,7 +25,23 @@
  * - description: Full description (shows in modal when clicked)
  */
 const portfolio = [
-  {
+  
+   {
+    id: "optimusprime",
+    type: "fanart",
+    title: "Optimus Prime",
+    image: "pictures/Optimus Prime.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+    featured: true
+  },
+   {
+    id: "datel",
+    type: "animals",
+    title: "Ilustrace k pohádce - Datel",
+    image: "pictures/datel.jpg",
+    description: "Ilustrace do pohádkové knížky Hvězdičky z pohádek od Martiny Kobylíkové",
+  },
+   {
     id: "spnfanart",
     type: "fanart",
     title: "Chevrolet Impala 1967 - Supernatural",
@@ -39,7 +55,6 @@ const portfolio = [
     title: "Můra a hvězdy",
     image: "pictures/moth_stars.png",
     description: "Obrázek můry s hvězdnou oblohou v pozadí.",
-    featured: true
   },
   {
     id: "bookcover-1",
