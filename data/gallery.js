@@ -31,7 +31,7 @@ const portfolio = [
     type: "illustrations",
     title: "Můra s konvalinkami",
     image: "pictures/moth.JPEG",
-    description: "Ilustrace můry s konvalinkami na černém pozadí.", // <-- add comma
+    description: "Ilustrace můry s konvalinkami na černém pozadí.",
     featured: true
   },
   {
@@ -39,7 +39,7 @@ const portfolio = [
     type: "illustrations",
     title: "Laň s máky",
     image: "pictures/doe.JPEG",
-    description: "Ilustrace laně s fialovými vlčími máky.", // <-- add comma
+    description: "Ilustrace laně s fialovými vlčími máky.",
     featured: true
   },
   {
@@ -47,7 +47,7 @@ const portfolio = [
     type: "illustrations",
     title: "Štěně zlatého retrívra s hortenziemi",
     image: "pictures/goldenPuppy.JPEG",
-    description: "Ilustrace štěněte zlatého retrívra s květy hortenzií.", // <-- add comma
+    description: "Ilustrace štěněte zlatého retrívra s květy hortenzií.",
     featured: true
   },
    {
