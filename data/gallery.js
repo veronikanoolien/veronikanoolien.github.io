@@ -26,35 +26,28 @@
  */
 const portfolio = [
    
-     {
+     
     id: "moth",
     type: "illustrations",
     title: "Můra s konvalinkami",
     image: "pictures/moth.JPEG",
-    description: "Ilustrace můry s konvalinkami na černém pozadí."
+    description: "Ilustrace můry s konvalinkami na černém pozadí.", // <-- add comma
     featured: true
   },
-       {
+  {
     id: "doe",
     type: "illustrations",
     title: "Laň s máky",
     image: "pictures/doe.JPEG",
-    description: "Ilustrace laně s fialovými vlčími máky."
+    description: "Ilustrace laně s fialovými vlčími máky.", // <-- add comma
     featured: true
   },
-   {
-    id: "bearcub",
-    type: "illustrations",
-    title: "Medvídě s ibišky",
-    image: "pictures/bearCub.JPEG",
-    description: "Ilustrace medvíděte s ibišky."
-  },
-   {
+  {
     id: "goldenpuppy",
     type: "illustrations",
     title: "Štěně zlatého retrívra s hortenziemi",
     image: "pictures/goldenPuppy.JPEG",
-    description: "Ilustrace štěněte zlatého retrívra s květy hortenzií."
+    description: "Ilustrace štěněte zlatého retrívra s květy hortenzií.", // <-- add comma
     featured: true
   },
    {
