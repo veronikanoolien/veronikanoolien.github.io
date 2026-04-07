@@ -26,7 +26,14 @@
  */
 const portfolio = [
    
-   
+     {
+    id: "moth",
+    type: "illustrations",
+    title: "Můra s konvalinkami",
+    image: "pictures/moth.JPEG",
+    description: "Ilustrace můry s konvalinkami na černém pozadí."
+    featured: true
+  },
        {
     id: "doe",
     type: "illustrations",
