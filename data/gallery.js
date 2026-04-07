@@ -26,7 +26,7 @@
  */
 const portfolio = [
    
-     
+     {
     id: "moth",
     type: "illustrations",
     title: "Můra s konvalinkami",
