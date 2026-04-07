@@ -5,7 +5,7 @@
 /**
  * WHY SEPARATE FILE?
  * - Easy to add/edit artwork without touching code
- * - When you create new illustrations, just add them here
+ * - When you create new artworks, just add them here
  * - Clean organization (data separate from logic)
  * 
  * HOW IT WORKS?
@@ -25,7 +25,53 @@
  * - description: Full description (shows in modal when clicked)
  */
 const portfolio = [
-  {
+   
+   
+       {
+    id: "doe",
+    type: "illustrations",
+    title: "Laň s máky",
+    image: "pictures/doe.JPEG",
+    description: "Ilustrace laně s fialovými vlčími máky."
+    featured: true
+  },
+   {
+    id: "bearcub",
+    type: "illustrations",
+    title: "Medvídě s ibišky",
+    image: "pictures/bearCub.JPEG",
+    description: "Ilustrace medvíděte s ibišky."
+  },
+   {
+    id: "goldenpuppy",
+    type: "illustrations",
+    title: "Štěně zlatého retrívra s hortenziemi",
+    image: "pictures/goldenPuppy.JPEG",
+    description: "Ilustrace štěněte zlatého retrívra s květy hortenzií."
+    featured: true
+  },
+   {
+    id: "blackcat",
+    type: "illustrations",
+    title: "Černá kočka s liliemi",
+    image: "pictures/blackCat.JPEG",
+    description: "Ilustrace černé kočky s liliemi.",
+  },
+   {
+    id: "raven",
+    type: "illustrations",
+    title: "Havran s levandulí",
+    image: "pictures/raven.JPEG",
+    description: "Ilustrace havrana s levandulí.",
+  }, 
+   {
+    id: "wolf",
+    type: "illustrations",
+    title: "Vlk s lupinou",
+    image: "pictures/wolf.JPEG",
+    description: "Ilustrace vlka s květy lupiny.",
+  },
+   {
     id: "zelva",
     type: "illustrations",
     title: "Knižní ilustrace - Želva",
